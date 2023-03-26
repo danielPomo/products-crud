@@ -12,12 +12,12 @@ html {
 
 .App {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  background-image: linear-gradient(rgba(0,0,0,.7), transparent);
 }
 
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: .75rem;
   text-align: center;
 }
 

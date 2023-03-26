@@ -2,8 +2,9 @@
 
 .products {
   display: grid;
-  grid-template-columns: repeat(autofill, minmax(230px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
   gap: 10px;
+  padding: 10px;
 }
 
 .productCard {
@@ -72,7 +73,17 @@
 /* Form Styles */
 
 .productForm {
-  padding: 1rem;
+  padding: 2.4rem;
+  background-image: url(/home-pic.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.productForm__container {
+  padding: 15px;
+  background-color: rgba(255,255,255,.5);
+  border-radius: 7px;
 }
 
 .productForm,
@@ -110,4 +121,10 @@
 .productForm__input {
   padding: 5px;
   border-radius: 5px;
+}
+
+@media screen and (min-width: 576px) {
+  .productForm {
+
+  }
 }

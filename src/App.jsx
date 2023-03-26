@@ -15,7 +15,12 @@ function App() {
   ])
 
   const createUserNewInfo = (data) => {
-    setproducts([...products, data])
+    setProducts([...products, data])
+  }
+
+  const deleteProduct = (productToDelete) => {
+    let filteredProducts = products.filter( ( item ) => item !== productToDelete)
+    setProducts (filteredProducts)
   }
 
   return (
@@ -24,7 +29,8 @@ function App() {
       createProduct = { (data) => createUserNewInfo(data) }
       />
       <ProductsList
-      productsData={products}
+      productsToRead = {products}
+      removeProduct = { (productToDelete) => deleteProduct(productToDelete) }
       />
     </div>
   )

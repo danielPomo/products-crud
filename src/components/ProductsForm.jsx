@@ -6,9 +6,9 @@ const ProductsForm = ({createProduct}) => {
 
     const {register, handleSubmit, formState:{errors}, reset} = useForm()
     
-    const submit = ( data ) => {
-       data.id = Date.now()
-       createProduct(data)
+    const submit = ( product ) => {
+       product.id = Date.now()
+       createProduct(product)
        emptyForm()
     }
     // const fillFormWithDefaultInfo = () => {

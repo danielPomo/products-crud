@@ -1,42 +1,113 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+/* Product Cards Styles */
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(autofill, minmax(230px, 1fr));
+  gap: 10px;
+}
+
+.productCard {
+  border: 2px solid #66666634;
+  box-shadow: 0px 5px 10px #66666650;
+  padding: 1rem;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+ 
+.productCard__name {
+  font-size: 1.5rem;
+}
+
+.productCard__dataBlock {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.productCard__data {
+  font-size: 1.15rem;
+}
+
+.productCard__attribute {
+  font-size: 1rem;
+  color: #666666;
+}
+
+.productCard__container--categories {
+  display: flex;
+  flex-direction: column;
+  row-gap: 7px;
+}
+
+.productCard__categories {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 7px;
+}
+
+.productCard__buttons {
+  display: flex;
+  column-gap: 5px;
+  align-self: flex-end;
+}
+
+.productCard__button {
+  padding: 5px 7px;
+  border: 1px solid gray;
+  background-color: #000;
+  border-radius: 7px;
+  font-size: 1.15rem;
+  color: #fff;
   text-align: center;
+  cursor: pointer;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* Form Styles */
+
+.productForm {
+  padding: 1rem;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.productForm,
+.productForm__fields {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.productForm__field {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 5px;
 }
 
-.card {
-  padding: 2em;
+.productForm__button {
+  padding: 5px 7px;
+  border: 1px solid gray;
+  background-color: #000;
+  border-radius: 7px;
+  font-size: .9rem;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
 }
 
-.read-the-docs {
-  color: #888;
+.productForm__attribute {
+  font-weight: 500;
+}
+
+.productForm__input {
+  padding: 5px;
+  border-radius: 5px;
 }
